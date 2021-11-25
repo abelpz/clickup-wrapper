@@ -48,7 +48,7 @@ npm install PATH_TO_GENERATED_PACKAGE --save
 
 #### Example
 
-Get authorized teams
+get authorized teams
 
 ```js
 import { AuthorizationApi } from 'clickup-wrapper'
@@ -56,11 +56,12 @@ import { AuthorizationApi } from 'clickup-wrapper'
 const auth = new AuthorizationApi({
     apiKey: YOUR_TOKEN
 })
+
 auth.getAuthorizedTeams()
-    .then((teams) => {
+    .then( teams => {
         console.log(teams.data)
     })
-    .catch(err => {
+    .catch( err => {
         console.err(err)
     })
 ```
